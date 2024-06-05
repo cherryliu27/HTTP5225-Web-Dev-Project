@@ -24,7 +24,7 @@
             echo 'Error Message' . mysqli_error($connect); //display error if nth returned
             exit;
         } else{
-            echo 'The query found ' . mysqli_num_rows($result) . ' records:' .'<br>';
+            echo 'The query found ' . mysqli_num_rows($result) . ' records:' .'<br><br>';
             foreach($result as $color){
                 // echo $color['Name'] .' ('. $color['Hex'] . ')';
                 echo '<div style="height: 15px; width: 200px; background: ' . $color['Hex'] . '">'. $color['Name'] .'</div>';
